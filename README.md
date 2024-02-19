@@ -21,7 +21,7 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
 - Die folgende Liste kann gerne ergänzt werden :)
 
 ### Bewegung animieren
->Die Methode ` - FrmFrogger_KeyDown´ wird ausgelöst, wenn eine Taste betätigt wird.
+>Die Methode (` - FrmFrogger_KeyDown´) wird ausgelöst, wenn eine Taste betätigt wird.
 ```ruby
 private void FrmFrogger_KeyDown(object sender, KeyEventArgs e){
 //Es wird überprüft, ob die Pfeiltasten nach oben gedrückt wurde.
@@ -58,7 +58,8 @@ private void FrmFrogger_KeyDown(object sender, KeyEventArgs e){
 
 
  }´´´
->Sobald der Spieler sich ganz oben befindet, muss er die Möglichkeit haben, eine neue Runde zu starten. Um dies zu ermöglichen, muss die Variable ` - round´ erhöht werden. Gleichzeitig sollte die `Spawnrate´ verringert werden, um die Häufigkeit der Hinderniserstellung anzupassen. Zudem müssen alle vorhandenen Hindernisse gelöscht werden, um Platz für neue Hindernisse mit unterschiedlichen Eigenschaften in der neuen Runde zu schaffen
+
+Sobald der Spieler sich ganz oben befindet, muss er die Möglichkeit haben, eine neue Runde zu starten. Um dies zu ermöglichen, muss die Variable (` - round´) erhöht werden. Gleichzeitig sollte die (`Spawnrate´) verringert werden, um die Häufigkeit der Hinderniserstellung anzupassen. Zudem müssen alle vorhandenen Hindernisse gelöscht werden, um Platz für neue Hindernisse mit unterschiedlichen Eigenschaften in der neuen Runde zu schaffen
  
 
 ### Objekte mit Tasten steuern
