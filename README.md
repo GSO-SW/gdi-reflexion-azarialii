@@ -21,13 +21,29 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
 - Die folgende Liste kann gerne ergänzt werden :)
 
 ### Bewegung animieren
+>Die Methode ` - FrmFrogger_KeyDown´ wird ausgelöst, wenn eine Taste betätigt wird.
 ```ruby
-if (e.KeyCode == Keys.Up)
+private void FrmFrogger_KeyDown(object sender, KeyEventArgs e){
+//Es wird überprüft, ob die Pfeiltasten nach oben gedrückt wurde.
+ if(e.KeyCode == Keys.Down)
+ {
+     // es wird überprüft, ob der Spieler ganz unten Steht
+     if (spieler.Y != hoehe - hoeheJeBereich)
+     {
+         spieler.Y = spieler.Y + hoeheJeBereich;
+     }
+
+ }
+}
+```
+>Alle anderen Pfeiltasten funktionieren genauso, außer einer Ausnahme.
+```ruby
+ if (e.KeyCode == Keys.Up)
  {
 
      if (spieler.Y <= anzahlBereiche)
      {
-         spieler.Y = hoehe - 35;
+         spieler.Y = hoehe - hoeheJeBereich;
          round++;
          alleHindernisse.Clear();
          
@@ -41,33 +57,8 @@ if (e.KeyCode == Keys.Up)
      }
 
 
- }
- if (e.KeyCode == Keys.Space)
- {
-     if (tmrGameTick.Enabled == true)
-     {
-         tmrGameTick.Enabled = false;
-
-         //tmrGameTick.Stop();
-         return; // verhindert, dass das Paint-Ereignis ausgeführt wird
-                 // notwendig, weil dort der Timer gestartet wird.
-     }
-     else
-     {
-         tmrGameTick.Enabled = true;
-     }
- }
- if (e.KeyCode== Keys.Right) { spieler.X = spieler.X - breiteJeBereich; }
- if(e.KeyCode== Keys.Left) { spieler.X = spieler.X + breiteJeBereich; }
- if(e.KeyCode == Keys.Down)
- {
-     if (spieler.Y != hoehe - 35)
-     {
-         spieler.Y = spieler.Y + hoeheJeBereich;
-     }
-
- }
-```
+ }´´´
+>Sobald der Spieler sich ganz oben befindet, muss er die Möglichkeit haben, eine neue Runde zu starten. Um dies zu ermöglichen, muss die Variable ` - round´ erhöht werden. Gleichzeitig sollte die `Spawnrate´ verringert werden, um die Häufigkeit der Hinderniserstellung anzupassen. Zudem müssen alle vorhandenen Hindernisse gelöscht werden, um Platz für neue Hindernisse mit unterschiedlichen Eigenschaften in der neuen Runde zu schaffen
  
 
 ### Objekte mit Tasten steuern
