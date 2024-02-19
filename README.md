@@ -21,8 +21,8 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
 - Die folgende Liste kann gerne ergänzt werden :)
 
 ### Bewegung animieren
-'''
- if (e.KeyCode == Keys.Up)
+```ruby
+if (e.KeyCode == Keys.Up)
  {
 
      if (spieler.Y <= anzahlBereiche)
@@ -67,7 +67,8 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
      }
 
  }
-'''
+```
+ 
 
 ### Objekte mit Tasten steuern
 
