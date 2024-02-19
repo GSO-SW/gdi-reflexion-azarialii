@@ -57,7 +57,7 @@ private void FrmFrogger_KeyDown(object sender, KeyEventArgs e){
      }
 
 
- }´´´
+ }```
 
 >Sobald der Spieler sich ganz oben befindet, muss er die Möglichkeit haben, eine neue Runde zu starten. Um dies zu ermöglichen, muss die Variable (` - round´) erhöht werden. Gleichzeitig sollte die (`Spawnrate´) verringert werden, um die Häufigkeit der Hinderniserstellung anzupassen. Zudem müssen alle vorhandenen Hindernisse gelöscht werden, um Platz für neue Hindernisse mit unterschiedlichen Eigenschaften in der neuen Runde zu schaffen
  
