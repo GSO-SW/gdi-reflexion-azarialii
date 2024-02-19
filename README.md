@@ -21,6 +21,53 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
 - Die folgende Liste kann gerne ergänzt werden :)
 
 ### Bewegung animieren
+'''
+ if (e.KeyCode == Keys.Up)
+ {
+
+     if (spieler.Y <= anzahlBereiche)
+     {
+         spieler.Y = hoehe - 35;
+         round++;
+         alleHindernisse.Clear();
+         
+         spawnRate-= 1; 
+         spawnZaehler = 0;
+     }
+     else
+     {
+         spieler.Y = spieler.Y - hoeheJeBereich;
+
+     }
+
+
+ }
+ if (e.KeyCode == Keys.Space)
+ {
+     if (tmrGameTick.Enabled == true)
+     {
+         tmrGameTick.Enabled = false;
+
+         //tmrGameTick.Stop();
+         return; // verhindert, dass das Paint-Ereignis ausgeführt wird
+                 // notwendig, weil dort der Timer gestartet wird.
+     }
+     else
+     {
+         tmrGameTick.Enabled = true;
+     }
+ }
+ if (e.KeyCode== Keys.Right) { spieler.X = spieler.X - breiteJeBereich; }
+ if(e.KeyCode== Keys.Left) { spieler.X = spieler.X + breiteJeBereich; }
+ if(e.KeyCode == Keys.Down)
+ {
+     if (spieler.Y != hoehe - 35)
+     {
+         spieler.Y = spieler.Y + hoeheJeBereich;
+     }
+
+ }
+'''
 
 ### Objekte mit Tasten steuern
 
