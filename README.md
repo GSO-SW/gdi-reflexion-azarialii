@@ -155,8 +155,23 @@ Das neue Formular wird mit der Methode ShowDialog() angezeigt, und das alte wird
 ```
 ![image](https://github.com/GSO-SW/gdi-reflexion-azarialii/assets/145339205/e1f67b86-0909-4d9b-adda-339e12346de2)
 
+> Außerdem der Benutzer kann die Schwierigkeit des Spiels durch ein ComboBox in FrmOption auswählen. Dadurch werden die Anzahl der Bahnen und die Geschwindigkeit, mit der Hindernisse erzeugt werden, angepasst:
+```ruby
+ private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+ {
+     if(comboBox1.Text == "Hard") 
+     {
+         FrmFrogger.anzahlBereiche = 40;
+         FrmFrogger.spawnRate = 3;
+     }
+     if(comboBox1.Text == "Easy")
+     {
+         FrmFrogger.anzahlBereiche = 10;
+         FrmFrogger.spawnRate = 5;
+     }
 
-
+ }
+```
 
 
 
