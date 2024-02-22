@@ -152,6 +152,8 @@ Das neue Formular wird mit der Methode ShowDialog() angezeigt, und das alte wird
 
   }
 ```
+![image](https://github.com/GSO-SW/gdi-reflexion-azarialii/assets/145339205/e1f67b86-0909-4d9b-adda-339e12346de2)
+
 
 
 
