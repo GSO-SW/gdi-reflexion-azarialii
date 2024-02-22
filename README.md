@@ -130,7 +130,8 @@ if (e.KeyCode == Keys.Space)
     {
         tmrGameTick.Enabled = true;
     }
-}```
+}
+```
 
 ### Ihr schönstes Ergebnis
 > Werden zwei neuen Forms erstellt(`FrmMenu`: wird am anfagang angezeit,`FrmOption`)
